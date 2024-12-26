@@ -10,7 +10,7 @@ from telebot.types import InputFile
 TOKEN = os.getenv('TOKEN')
 if not TOKEN:
     raise Exception("Bot token is not defined")
-admin_chat_id = os.environ.get('ADMIN_CHAT_ID')
+admin_chat_id = os.getenv('ID')
 print(f"TOKEN: {TOKEN}, ADMIN_CHAT_ID: {admin_chat_id}")
 bot = telebot.TeleBot(TOKEN)
 
