@@ -2,7 +2,8 @@ import telebot
 import messages
 import keyboard
 import time
-from decouple import import os
+from decouple import config
+import os
 from telebot.types import InputFile
 
 # Load bot token and admin chat ID from environment variables
