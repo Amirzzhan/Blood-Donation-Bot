@@ -8,6 +8,8 @@ from telebot.types import InputFile
 
 # Load bot token and admin chat ID from environment variables
 TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
+if not TOKEN:
+    raise Exception("Bot token is not defined")
 admin_chat_id = os.environ.get('ADMIN_CHAT_ID')
 
 bot = telebot.TeleBot(TOKEN)
