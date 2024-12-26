@@ -2,12 +2,12 @@ import telebot
 import messages
 import keyboard
 import time
-from decouple import config
+from decouple import import os
 from telebot.types import InputFile
 
 # Load bot token and admin chat ID from environment variables
-TOKEN = config('TELEGRAM_BOT_TOKEN')
-admin_chat_id = config('ADMIN_CHAT_ID')
+TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
+admin_chat_id = os.environ.get('ADMIN_CHAT_ID')
 
 bot = telebot.TeleBot(TOKEN)
 
