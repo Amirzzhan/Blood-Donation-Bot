@@ -11,7 +11,7 @@ TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
 if not TOKEN:
     raise Exception("Bot token is not defined")
 admin_chat_id = os.environ.get('ADMIN_CHAT_ID')
-
+print(f"TOKEN: {TOKEN}, ADMIN_CHAT_ID: {admin_chat_id}")
 bot = telebot.TeleBot(TOKEN)
 
 # Dictionary to store user IDs and their questions
