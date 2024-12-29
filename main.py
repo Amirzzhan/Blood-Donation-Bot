@@ -94,10 +94,10 @@ def callback_query(call):
 
     if data == 'post1':
         bot.send_message(call.from_user.id, 'Nutrition of the donor:'
-                                            'https://www.instagram.com/p/CZRwz49sinF/?igshid=YmMyMTA2M2Y=', reply_markup=keyboard.articles_others())
+                                            'https://www.instagram.com/p/DBk7Ee0MYyT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==', reply_markup=keyboard.articles_others())
 
     if data == 'post2':
-        bot.send_message(call.from_user.id, 'Main benefits of blood donation : \n\nhttps://www.instagram.com/p/CKBp5ZxHqj_/?igshid=YmMyMTA2M2Y=', reply_markup=keyboard.articles_others())
+        bot.send_message(call.from_user.id, 'Myths about Blood Donation : \n\nhttps://www.instagram.com/p/DD4jnI_MSos/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==', reply_markup=keyboard.articles_others())
 
     if data == 'post3':
         bot.send_photo(call.from_user.id, InputFile('img/post3.jpg'), caption="Breaking stereotypes", reply_markup=keyboard.articles_others())
