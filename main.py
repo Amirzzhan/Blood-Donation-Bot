@@ -4,6 +4,9 @@ import keyboard
 import time
 from decouple import config
 from telebot.types import InputFile
+import logging
+telebot.logger.setLevel(logging.DEBUG)
+
 
 # Load bot token and admin chat ID from environment variables
 TOKEN = config('TELEGRAM_BOT_TOKEN')
