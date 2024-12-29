@@ -8,6 +8,8 @@ from telebot.types import InputFile
 # Load bot token and admin chat ID from environment variables
 TOKEN = config('TELEGRAM_BOT_TOKEN')
 admin_chat_id = config('ADMIN_CHAT_ID')
+print(f"TOKEN: {TOKEN}")
+
 
 # Dictionary to store user IDs and their questions
 user_questions = {}
