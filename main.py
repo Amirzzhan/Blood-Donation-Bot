@@ -4,16 +4,13 @@ import keyboard
 import time
 from decouple import config
 from telebot.types import InputFile
-import logging
-telebot.logger.setLevel(logging.DEBUG)
-
 
 # Load bot token and admin chat ID from environment variables
 TOKEN = config('TELEGRAM_BOT_TOKEN')
 admin_chat_id = config('ADMIN_CHAT_ID')
-print(f"TOKEN: {TOKEN}")
 
 bot = telebot.TeleBot(TOKEN)
+
 # Dictionary to store user IDs and their questions
 user_questions = {}
 
@@ -187,7 +184,8 @@ def message_handler(message):
         bot.send_message(message.chat.id, "Please, start your question with command /q")
         bot.send_message(message.chat.id, "for example: '/q How can I contact member of Red Crescent Club?'")
     if message.text == 'Upcoming events 🎉':
-        bot.send_photo(message.chat.id, InputFile('img/poster.PNG'), messages.upcoming_events_text(), parse_mode='HTML')
+        bot.send_photo(message.chat.id, InputFile('img/BD photozone.png'), messages.upcoming_events_text(),
+                       parse_mode='HTML')
 
 
 bot.polling()
