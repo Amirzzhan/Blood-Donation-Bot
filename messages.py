@@ -46,7 +46,7 @@ def learn_more() -> str:
 def articles() -> str:
     return "More about blood donation:\n" \
            "1. Nutrition of the donor\n" \
-           "2. Main benefits of blood donation\n" \
+           "2. Myths about Blood Donation\n" \
            "3. Breaking stereotypes: why you don’t donate blood\n" \
            "4. Who cannot donate blood? Contraindications\n" \
            "5. What will happen to the donor’s blood?\n" \
