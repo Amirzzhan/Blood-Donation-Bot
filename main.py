@@ -13,7 +13,7 @@ TOKEN = config('TELEGRAM_BOT_TOKEN')
 admin_chat_id = config('ADMIN_CHAT_ID')
 print(f"TOKEN: {TOKEN}")
 
-
+bot = telebot.TeleBot(TOKEN)
 # Dictionary to store user IDs and their questions
 user_questions = {}
 
