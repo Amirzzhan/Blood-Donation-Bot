@@ -18,7 +18,7 @@ user_questions = {}
 @bot.message_handler(commands=['get_admin_id'])
 def get_admin_id(message):
     # This will send the chat_id of the admin to the bot
-    bot.send_message(message.chat.id, f"Your chat ID is: {message.chat.id}")
+    bot.send_message(message.chat.id, f"Your chat ID is: {message.chat.id}" )
 
 
 @bot.message_handler(commands=['test_admin'])
